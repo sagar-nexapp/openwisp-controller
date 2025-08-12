@@ -18,6 +18,6 @@ openwisp-ipam @ https://github.com/openwisp/openwisp-ipam/tarball/1.2
 djangorestframework-gis @ https://github.com/openwisp/django-rest-framework-gis/tarball/1.2
 
 # Editable installs from your GitHub fork (sagar-nexapp)
--e git+https://github.com/sagar-nexapp/openwisp-users.git@main#egg=openwisp_users
--e git+https://github.com/sagar-nexapp/openwisp-utils.git@main#egg=openwisp_utils[celery,channels]
--e git+https://github.com/sagar-nexapp/openwisp-notifications.git@main#egg=openwisp_notifications
+git+https://github.com/sagar-nexapp/openwisp-users.git@main#egg=openwisp_users
+git+https://github.com/sagar-nexapp/openwisp-utils.git@main#egg=openwisp_utils[celery,channels]
+git+https://github.com/sagar-nexapp/openwisp-notifications.git@main#egg=openwisp_notifications
