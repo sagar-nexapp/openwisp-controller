@@ -1,4 +1,4 @@
-# Third-party packages
+# Third-party Django and Python packages
 django-sortedm2m~=4.0.0
 django-reversion~=5.1.0
 django-taggit~=6.0.0
@@ -10,14 +10,14 @@ shortuuid~=1.0.13
 netaddr~=1.3.0
 django-import-export~=4.1.1
 
-# OpenWISP modules (local editable forks)
--e ../openwisp-users
--e ../openwisp-utils
--e ../openwisp-notifications
+# OpenWISP modules from official sources (non-editable)
+netjsonconfig @ https://github.com/openwisp/netjsonconfig/tarball/1.2
+django-x509 @ https://github.com/openwisp/django-x509/tarball/1.3
+django-loci @ https://github.com/openwisp/django-loci/tarball/1.2
+openwisp-ipam @ https://github.com/openwisp/openwisp-ipam/tarball/1.2
+djangorestframework-gis @ https://github.com/openwisp/django-rest-framework-gis/tarball/1.2
 
-# OpenWISP modules (read-only from GitHub)
--e git+https://github.com/openwisp/netjsonconfig.git#egg=netjsonconfig
--e git+https://github.com/openwisp/django-x509.git#egg=django_x509
--e git+https://github.com/openwisp/django-loci.git#egg=django_loci
--e git+https://github.com/openwisp/openwisp-ipam.git#egg=openwisp_ipam
--e git+https://github.com/openwisp/django-rest-framework-gis.git#egg=djangorestframework_gis
+# Editable installs from your GitHub fork (sagar-nexapp)
+-e git+https://github.com/sagar-nexapp/openwisp-users.git@main#egg=openwisp_users
+-e git+https://github.com/sagar-nexapp/openwisp-utils.git@main#egg=openwisp_utils[celery,channels]
+-e git+https://github.com/sagar-nexapp/openwisp-notifications.git@main#egg=openwisp_notifications
